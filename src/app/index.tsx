@@ -68,35 +68,38 @@ export default function HomeScreen() {
           <TouchableOpacity style={styles.key} onPress={() => addNumber("1")}><Text>1</Text></TouchableOpacity>
           <TouchableOpacity style={styles.key} onPress={() => addNumber("2")}><Text>2</Text></TouchableOpacity>
           <TouchableOpacity style={styles.key} onPress={() => addNumber("3")}><Text>3</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("4")}><Text>4</Text></TouchableOpacity>
-        </View>
-
-        <View style={styles.btnC}>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("5")}><Text>5</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("6")}><Text>6</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("7")}><Text>7</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("8")}><Text>8</Text></TouchableOpacity>
-        </View>
-
-        <View style={styles.btnC}>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("9")}><Text>9</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.key} onPress={() => addNumber("0")}><Text>0</Text></TouchableOpacity>
-          <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber("+")}>
-            <Text style={styles.operatorText}>+</Text>
-          </TouchableOpacity>
           <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber("-")}>
             <Text style={styles.operatorText}>-</Text>
           </TouchableOpacity>
+          
         </View>
 
         <View style={styles.btnC}>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("4")}><Text>4</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("5")}><Text>5</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("6")}><Text>6</Text></TouchableOpacity>
           <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber("/")}>
             <Text style={styles.operatorText}>÷</Text>
           </TouchableOpacity>
+          
+        </View>
 
+        <View style={styles.btnC}>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("7")}><Text>7</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("8")}><Text>8</Text></TouchableOpacity>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("9")}><Text>9</Text></TouchableOpacity>
+          
+          <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber("+")}>
+            <Text style={styles.operatorText}>+</Text>
+          </TouchableOpacity>
+          
+        </View>
+
+        <View style={styles.btnC}>
           <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber("*")}>
             <Text style={styles.operatorText}>×</Text>
           </TouchableOpacity>
+          <TouchableOpacity style={styles.key} onPress={() => addNumber("0")}><Text>0</Text></TouchableOpacity>
 
           <TouchableOpacity style={styles.operatorKey} onPress={() => addNumber(".")}>
             <Text style={styles.operatorText}>.</Text>
@@ -111,8 +114,7 @@ export default function HomeScreen() {
           </TouchableOpacity>
 
         </View>
-
-
+        
         <View style={styles.actions}>
           <TouchableOpacity
             style={styles.clearBtn}

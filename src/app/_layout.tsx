@@ -1,20 +1,35 @@
-import { Stack } from "expo-router";
+import { Tabs } from "expo-router";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Layout() {
   return (
-    <Stack
+    <Tabs
       screenOptions={{
         headerShown: true,
-        headerTitle: "Calculator",
         headerTitleAlign: "center",
       }}
     >
-      <Stack.Screen 
+      <Tabs.Screen
         name="index"
         options={{
-          title: "Calculator"
+          title: "Calculator",
+          headerTitle: "Calculator",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calculator" size={size} color={color} />
+          ),
         }}
       />
-    </Stack>
+
+      <Tabs.Screen
+        name="about"
+        options={{
+          title: "About",
+          headerTitle: "About",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="information-circle" size={size} color={color} />
+          ),
+        }}
+      />
+    </Tabs>
   );
 }
